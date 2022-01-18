@@ -10,29 +10,40 @@ body{
 .image{
     width: 77vw;
    grid-area: image;
-   height: 30vh;
+   
 }
 .first{
     grid-area: first;
     background-image: url(/assets/img/handbag.jpg);
-    height: 30vh;
+    
+    text-align: left;
+    padding-top: 150px;
     
 }
 .second {
     grid-area: second;
     background-image: url(/assets/img/watch.jpeg);
-    text-align: center;
+    text-align: left;
+    padding-top: 150px;
 }
 .third {
     grid-area: third;
+    background-image: url(/assets/img/mymym.jpeg);
+    padding-top: 150px;
+    text-align: left;
 }
 
 .zxc {
+    
     margin-top: -8px;
+
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "image image image"
-                         "first second third";                    
+                         "first second third";     
+    gap: 20px
+    ;               
 }
 main{
     margin-bottom: 0%;
@@ -43,4 +54,9 @@ main{
 }
 .card-img-top {
     height: 250px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 50px;
 }
