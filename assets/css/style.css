@@ -57,6 +57,9 @@ main{
 }
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
     gap: 50px;
+}
+#wk {
+    word-spacing: 15px;
 }
