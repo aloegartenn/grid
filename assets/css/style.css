@@ -5,10 +5,11 @@ body{
     box-sizing: border-box;
 }
 .top {
-    word-spacing: 40px;
+    word-spacing: 7px;
+    width: 695px;
 }
 .image{
-    width: 77vw;
+    width: 695px;
    grid-area: image;
    
 }
@@ -18,6 +19,7 @@ body{
     
     text-align: left;
     padding-top: 150px;
+    object-fit:cover
     
 }
 .second {
@@ -25,12 +27,14 @@ body{
     background-image: url(/assets/img/watch.jpeg);
     text-align: left;
     padding-top: 150px;
+    object-fit:cover
 }
 .third {
     grid-area: third;
     background-image: url(/assets/img/mymym.jpeg);
     padding-top: 150px;
     text-align: left;
+    object-fit:cover
 }
 
 .zxc {
@@ -39,14 +43,17 @@ body{
 
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "image image image"
-                         "first second third";     
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-areas: "image "
+                         "first "
+                         "second"
+                         "third";   
     gap: 20px
     ;               
 }
 main{
-    margin-bottom: 0%;
+   margin: 0px auto;
+    
 }
 .card{
     text-align: center;
@@ -57,9 +64,33 @@ main{
 }
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr   ;
     gap: 50px;
+   
 }
 #wk {
     word-spacing: 15px;
+}
+.card-img-top {
+    object-fit:cover;
+}
+@media(min-width:1200px) {
+    .top {
+        word-spacing: 40px;
+        width: 1116px;
+    }
+    .image {
+        width: 1116px;
+    }
+    .zxc { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-areas: "image image image"
+                             "first  second third";   
+
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
