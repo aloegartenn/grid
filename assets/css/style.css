@@ -5,11 +5,11 @@ body{
     box-sizing: border-box;
 }
 .top {
-    word-spacing: 7px;
-    width: 695px;
+    word-spacing: 2px;
+    width: 100%;
 }
 .image{
-    width: 695px;
+    width: 100%;
    grid-area: image;
    
 }
@@ -43,7 +43,7 @@ body{
 
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr   ;
     grid-template-areas: "image "
                          "first "
                          "second"
@@ -64,8 +64,8 @@ main{
 }
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 50px;
+    grid-template-columns:  1fr ;
+    gap: 20px;
    
 }
 #wk {
