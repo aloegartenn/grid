@@ -76,11 +76,11 @@ main{
 }
 @media(min-width:1200px) {
     .top {
-        word-spacing: 40px;
-        width: 1116px;
+        word-spacing: 20px;
+        width: 100%;
     }
     .image {
-        width: 1116px;
+        width: 100%;
     }
     .zxc { 
         display: grid;
